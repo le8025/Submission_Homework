@@ -42,14 +42,14 @@
 
                     let dInput = document.getElementById("dob").value;
                     console.log(dInput);
-                    let dateInput = new Date(dInput);
 
-                    //validation to ensure date selected in input
-                    if (dateInput == ""){
+                   //validation to ensure date selected in input
+                    if (dInput == ""){
                         alert("Enter date please"); 
                         return;
                     }
 
+                    let dateInput = new Date(dInput);
                     let diff = dateNow.getFullYear()-dateInput.getFullYear();
                     console.log("diff= "+diff);
 
@@ -77,5 +77,4 @@
         <button onclick="getAge()"> Reveal your age </button>
     </body>
    
-</html>
 </html>
