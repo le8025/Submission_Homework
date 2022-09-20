@@ -1,0 +1,62 @@
+<html>
+    <!--1. Set the value for localstorage and sessionstorage using input box.
+            - print in console.
+    -->
+    <head>
+        <script>
+            function setLocal(){
+                //store the input value in the local storage
+                let input_local = document.getElementById("local").value;
+                localStorage.setItem("item", input_local);
+                document.getElementById("local").value ="";
+
+            }
+
+            function getLocal(){
+                //get the value based on the key and print in console
+                let html = '<b>' + localStorage.getItem("item") + '</b>';
+                console.log("localStorage item:" + localStorage.getItem("item"));
+                document.getElementById("result").innerHTML="Local storage value: " + html;
+            }
+
+            function setSession(){
+                let input_session = document.getElementById("session").value;
+                sessionStorage.setItem("item", input_session);
+                document.getElementById("session").value ="";
+
+            }
+
+            function getSession(){
+                let html = '<b>' + sessionStorage.getItem("item") + '</b>';
+                console.log("sessionStorage item:" + sessionStorage.getItem("item"));
+                document.getElementById("result").innerHTML="Session storage value: " + html;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1> Local Storage </h1>
+            <input id = "local" type="text" placeholder = "set value for localStorage">
+            <button onclick="setLocal()">SET Local</button>
+            <button onclick="getLocal()">GET Local</button>
+        </div>
+
+        <div>
+            <h1> Session Storage </h1>
+            <input id = "session" type="text" placeholder = "set value for localStorage">
+            <button onclick="setSession()">SET Session</button>
+            <button onclick="getSession()">GET Session</button>
+        </div>
+        
+
+        <div >
+            <h1>Result</h1>
+            <div id = "result">
+
+            </div>
+        </div>
+        
+
+    </body>
+</html>
