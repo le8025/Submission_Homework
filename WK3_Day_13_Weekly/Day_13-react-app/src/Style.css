@@ -1,0 +1,93 @@
+/* navigation menu CSS */
+.menu{
+    position: relative;
+    text-align: center;
+    background-color: rgb(103, 155, 163);
+    font-size: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1% 10%;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:  rgb(33, 53, 56);
+}
+
+.menu li a div:hover{
+    color:  rgb(194, 247, 255);
+}
+
+/* CSS shared across, or in main components */
+.home_header{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 32px;
+    color:  rgb(56, 86, 91);
+}
+
+.component_margins{
+    width:98%;
+    margin: 0 1%;
+}
+
+/* Footer CSS */
+.footer_style{
+    background-color: rgb(103, 155, 163);
+    display: block;
+    padding: 1px 1% 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer_style a{
+    color:  rgb(33, 53, 56);
+    font-weight: bold;
+
+}
+
+.footer_style a:hover{
+    color:  rgb(194, 247, 255);
+}
+
+
+/* Home CSS */
+table{
+    width: 50%;
+    border: 1px none black;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(39, 66, 66);
+    color: rgb(255, 255, 255);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(204, 254, 255);
+}
+tr:nth-child(even){
+    background-color: rgb(157, 249, 241);
+}
+
+
+/* Contact CSS */
+.question-form {
+    padding: 1% 0;
+}
+
+.question-form input{
+    width: 25%;
+}
+
+.question-form textarea{
+    width: 30%;
+    margin: 1% 0;
+}
+
