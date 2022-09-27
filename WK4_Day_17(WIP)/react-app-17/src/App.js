@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <div className="home_header">
-      <h1> WIP: Task 2.4</h1>
+      <h1> Completed (Minimally) </h1>
     </div>
 
     <Router>
