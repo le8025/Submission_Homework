@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <div className="home_header">
-      <h1> 1 and 2.3 done only </h1>
+      <h1> 1 and 2.3 done only</h1>
     </div>
 
     <Router>
