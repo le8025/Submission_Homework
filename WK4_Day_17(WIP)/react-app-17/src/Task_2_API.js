@@ -46,7 +46,6 @@ class Task_2_API extends React.Component{
                     <p><i>Still working on this</i></p>
 
                      <h2>GET API</h2>
-                     <p><i>Progress: got the result in GetAPI but employeeList not showing: </i></p>
                     Select a page: <select onChange={(e)=>this.setState({"pageNo":e.target.value})}>
                                         <option defaultValue={""} hidden></option>
                                         <option value="1">Page 1</option>
@@ -56,7 +55,7 @@ class Task_2_API extends React.Component{
                     <p />
 
                     {
-                        (this.state.pageNo != 0)? <GetAPIResponse pageNo = {this.state.pageNo}/>:<h1> No Data Yet</h1>                    
+                        (this.state.pageNo != 0)? <GetAPIResponse pageNo = {this.state.pageNo}/>:<h4> No Data Yet. Please select a page.</h4>                    
                         
                     }
 
