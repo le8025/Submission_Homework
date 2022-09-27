@@ -13,6 +13,7 @@ function GetAPIResponse (props){
         })
     },
     [props.pageNo]) // it's the pageNo that changes not the employeeList
+    
     return(
         <>
         {
